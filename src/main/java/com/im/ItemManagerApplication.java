@@ -92,7 +92,9 @@ public class ItemManagerApplication {
 		Items.add(new Item("Conjured Mana Cake", 3, 6));
 
 		for (Item item : Items) {
-			System.out.println(item.toString());
+			System.out.println("Item: " + item.getName() + 
+					   "\nSellIn:   " + item.getSellIn() + 
+					   "\nQuality:  " + item.getQuality() + "\n");
 		}
 
 		int iter = Console.getInt("Choose how many days to progress (enter 0 to quit): ");
@@ -108,7 +110,9 @@ public class ItemManagerApplication {
 
 			System.out.println("After " + iter + "Day(s)");
 			for (Item item : Items) {
-				System.out.println(item.toString());
+				System.out.println("Item: " + item.getName() + 
+						   "\nSellIn:   " + item.getSellIn() + 
+						   "\nQuality:  " + item.getQuality() + "\n");
 			}
 
 			iter = Console.getInt("Choose how many days to progress (enter 0 to quit): ");
