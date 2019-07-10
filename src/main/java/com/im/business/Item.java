@@ -38,13 +38,4 @@ public class Item {
 	public void setQuality(int quality) {
 		Quality = quality;
 	}
-
-	@Override
-	public String toString() {
-		return "Item: " + Name + 
-			   "\nSellIn:   " + SellIn + 
-			   "\nQuality:  " + Quality + "\n";
-	}
-	
-	
 }
