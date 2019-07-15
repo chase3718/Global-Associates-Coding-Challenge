@@ -1,6 +1,6 @@
 package com.im.business;
 
-public class Item {
+public abstract class Item implements updatable {
 	private String Name;
 	private int SellIn;
 	private int Quality;
@@ -38,4 +38,5 @@ public class Item {
 	public void setQuality(int quality) {
 		Quality = quality;
 	}
+	
 }
